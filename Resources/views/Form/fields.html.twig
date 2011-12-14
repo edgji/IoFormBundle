@@ -47,7 +47,7 @@
         {% endif %}
         $( "#{{ id }}" ).autocomplete({
             source: function(request, cb){
-                var url = "{{ url }}".replace('$$term$$', request.term);
+                var url = "{{ url }}".replace(encodeURIComponent('$$term$$'), request.term);
                 {% if not callback %}
                     $.get( url, function(data) {callback(data, cb)});
                 {% else %}
