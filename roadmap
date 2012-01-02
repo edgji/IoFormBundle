@@ -23,6 +23,7 @@ Roadmap for IoFormBundle
 
   - tagging:      select/deselect many values using autocomplete function (like facebook/google+/wordpress tagging fields)
 
+  - jqgrid:
 
   <drag&drop>
   - sortable:
